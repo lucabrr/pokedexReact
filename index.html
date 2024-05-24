@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+    <style>
+      body {
+        height: 100vh;
+        background: linear-gradient(45deg, #ff0000, #3b4cca, #26c348, #b3a125);
+        background-size: 300%, 300%;
+        animation: color 12s ease-in-out infinite;
+      }
+      @keyframes color {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
